@@ -1252,7 +1252,7 @@ class EnhancedDeclarativeCatalystServer:
             "You are a network operations assistant. "
             "Summarize the following Cisco Catalyst Center API response concisely for a network engineer. "
             "Include key counts, notable issues, and actionable insights. "
-            "Be factual and precise. Keep the summary under 250 words. "
+            "Be factual and precise. Keep the summary under 300 words. "
             "Do not invent data that is not present in the response."
         )
         user_message = f"Tool: {context_name}\n\nAPI Response:\n{llm_input}"
@@ -1264,7 +1264,7 @@ class EnhancedDeclarativeCatalystServer:
                 {"role": "user", "content": user_message}
             ],
             "temperature": 0.2,
-            "max_tokens": 400
+            "max_tokens": 512
         }
         headers = {
             "Content-Type": "application/json",
