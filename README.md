@@ -103,7 +103,7 @@ These files are used for endpoint discovery, similarity search, endpoint metadat
 
 Example:
 ```bash
-make model ARGS="--no-ssl-verify"
+uv run python download_model.py --no-ssl-verify
 # or with a custom model name:
 uv run python download_model.py --model-name all-MiniLM-L6-v2
 ```
