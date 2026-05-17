@@ -31,7 +31,7 @@ env:
 	fi
 
 model:
-	uv run python download_model.py
+	uv run python download_model.py --no-ssl-verify
 
 smoke:
 	@echo "Starting stdio server for 10 seconds — tailing log..."
