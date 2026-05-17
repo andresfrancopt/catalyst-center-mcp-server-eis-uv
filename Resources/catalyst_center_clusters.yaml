@@ -1,0 +1,12 @@
+# catalyst_center_clusters.yaml
+# Multi-cluster Catalyst Center configuration
+
+catalyst_centers:
+  - name: "Krakow"
+    host: "10.62.185.25"
+    enabled: false   # ← disable it
+  - name: "San Jose"
+    host: "SanJose-catalyst.domain.com"
+    version: "2.3.7.9"
+    location: "San Jose"
+    enabled: false

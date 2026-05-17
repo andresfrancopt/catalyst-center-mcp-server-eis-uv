@@ -1,0 +1,23 @@
+[project]
+name = "catalyst-center-mcp-server"
+version = "0.1.0"
+description = "Catalyst Center MCP Server"
+requires-python = ">=3.10"
+dependencies = [
+    "requests",
+    "urllib3",
+    "mcp",
+    "uvicorn",
+    "starlette",
+    "catalystcentersdk",
+    "python-dotenv",
+    "pyyaml",
+    "httpx",
+    "sentence-transformers",
+    "numpy",
+    "scikit-learn",
+    "pydantic",
+]
+
+[dependency-groups]
+dev = []

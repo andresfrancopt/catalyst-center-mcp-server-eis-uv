@@ -1,0 +1,39 @@
+# ── Credentials ───────────────────────────────────────────────────────────────
+# Never commit real credentials — use environment.example.env as the template
+environment.env
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environment ────────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── Embeddings cache & downloaded models ──────────────────────────────────────
+# .pkl files are auto-rebuilt from Resources/CC_swagger.json on first run
+# The sentence-transformer model is downloaded via download_model.py
+embeddings_cache/
+
+# ── Runtime logs & analytics ──────────────────────────────────────────────────
+logs/
+*.log
+catalyst_center_mcp_explorer_analytics.json
+
+# ── IDE / editor ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ── Python version pin (local tool, not project-wide) ─────────────────────────
+.python-version
